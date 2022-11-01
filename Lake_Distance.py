@@ -20,6 +20,7 @@ elif Huron in lst_no:
     lake_1 = int(0)
 
 
+
 # input for lake Erie
 Erie = input("Did you Go Across Lake Erie?: ")
 
