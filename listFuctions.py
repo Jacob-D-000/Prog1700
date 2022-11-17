@@ -34,7 +34,41 @@ rg = range(0, len(list3), 2)
 for i in rg:
     print(list3[i])
 
+print(list3.pop(4))
 
+
+items = "Fred Wilma Dino Barney Betty BamBam".split()
+print(items)
+
+item2 = "11/14/2018".split("/")
+print(item2)
+
+# item3 =[]
+# print("enter 5 numbers: ")
+# for index in range(5):
+#     item3.append(eval(input()))
+
+# print(item3)
+
+s = input("Enter 5 Numbers \
+    separated by spaces:")
+numbers =s.split()
+item4 = [eval(x) for x in numbers]
+print(item4)
+
+item5 = []
+for x in numbers:
+    item5.append(eval(x))
+print(item5)
+
+def shift(lst):
+    temp = lst[0]
+    for i in range (1, len(lst)):
+        lst[i - 1]=lst[i]
+    lst[len(lst) - 1 ] = temp
+
+shift(items)
+print(items)
 
 # i = 0
 # while i < len(myList):
