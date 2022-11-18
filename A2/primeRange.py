@@ -22,10 +22,15 @@ input("This program will calculate all numbers from 1 to 100. Press enter to run
 
 # The forloop
 for num in numran:
+    # when the fuction loops, primcon will resent to zero
     primcon = 0
+    # defines the range when the fuction loops
     divran = (range(1, num + 1))
+    # for loop that divides num within its own range (technically the divison range)
     for div in divran:
         output = ((num) / (div))
+        # if statement checks whether or notthe output is equal to an integer. If so, primcon
+        # increase by one
         if output == int(output):
             primcon +=1
 
