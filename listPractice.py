@@ -58,3 +58,14 @@ print(myList)
 
 random.shuffle (myList)
 print(myList)
+
+# calling the value of my list
+myList2 = myList
+print(id(myList))
+print(id(myList2))
+
+# This copys values from myList to myList3
+myList3 = [x for x in myList]
+print(id(myList3))
+# Can also be written as "myList3 = [] + myList"
+

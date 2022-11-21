@@ -3,7 +3,7 @@ Program: Practicing List Split Inputs
 Author: Jacob Dimoff
 Date: 21/11/22
 filename: listSplitInput.py
-Purpose: practice with list splitting an comprehension
+Purpose: practiceacte with list splitting an comprehension
 """
 
 def shift(list):
