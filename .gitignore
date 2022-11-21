@@ -313,3 +313,35 @@ pip-selfcheck.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+
+.backup
+.helpers
+.media
+.mypy_cache
+.output
+*.vsix
+.samples
+.research
+.test
+.vscode/*
+.spellignore
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+/node_modules/
+.npm
+.node_repl_history
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.testindent.log
+/temp/
+lib/bin/node-spellchecker/bin/
+lib/bin/node-spellchecker/build/
+lib/bin/node-spellchecker/node_modules/
+lib/bin/node-spellchecker/vendor/hunspell_dictionaries/
+/TODO*
+/GPATH
+/GRTAGS
+/GTAGS
