@@ -6,47 +6,32 @@ filename: letterCount.py
 Purpose:
 """
 
-def getlst():
+def getinput():
     charinput = input("Type something: ")
     return charinput
 
-
-# def prinfunk():
-#     print(getlst())
-#     return charinput
-
-
-
-
-def countlst():
-    str = charinput
+def getlist(x):
+    str = x
     charlst = []
-    for charinput in str:
-        charlst.append(str)
-    
+    for x in str:
+        charlst.append(x)
     return charlst
+
+def countloop(z):
+    luran = range(0, len(z)) 
+    for x in luran:
+        idx = z[x]
+        couidx = z.count(idx)
+        if couidx == 1:
+            print(f"{z[x]} was only found once in this string")
+        else:
+            print(f"{z[x]} was found {z.count(idx)} times in this string")
+
+def main(): 
+    charinput = getinput()
+    charlst = getlist(charinput)
+    countloop(charlst)
+
     
-
-# def prinlst():
-#     print(getlist())
-
-#  getlist()
-
-# prinlst()
-
-# def countlst():
-    
-
-def main():
-    getlist()
-    charlist = charlist
-    print(charlist)
-    # prinlst()
-
 main()
 
-# lstrange = (1, len(charlist) + 1)
-
-# i = 1
-
-# for i in lstrange:  
