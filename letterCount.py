@@ -21,11 +21,12 @@ def countloop(z):
     luran = range(0, len(z)) 
     for x in luran:
         idx = z[x]
+        
         couidx = z.count(idx)
-        if couidx == 1:
-            print(f"{z[x]} was only found once in this string")
-        else:
-            print(f"{z[x]} was found {z.count(idx)} times in this string")
+        # if couidx == 1:
+        #     print(f"{z[x]} was only found once in this string")
+        # else:
+        #     print(f"{z[x]} was found {z.count(idx)} times in this string")
 
 def main(): 
     charinput = getinput()

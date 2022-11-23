@@ -9,22 +9,22 @@ Purpose: To practice methods that affect lists
 import random
 
 myList = [30, 1, 2, 1 ,0]
-print(myList)
+print(f"1. {myList}")
 
 myList.append(40)
-print(myList)
+print(f"2. {myList}")
 
 myList.insert(1, 43)
-print(myList)
+print(f"3. {myList}")
 
 myList.extend([1, 43])
-print(myList)
+print(f"4. {myList}")
 
 myList[2]
-print(myList[2])
+print(f"5. {myList[2]}")
 
 myList.index(2)
-print(myList.index(2))
+print(f"6. {myList.index(2)}")
 
 myList.count(43)
 print(myList.count(43))
