@@ -1,38 +1,49 @@
-#This File is used to to test fuctions in scratch.
+# # #This File is used to to test fuctions in scratch.
     
     
-charinput = input("Type something: ")
+# # charinput = input("Type something: ")
 
-(charinput)
+# # (charinput)
 
-str = ord(charinput)
-charlst = []
-for charinput in str:
-    charlst.append(charinput)
+# # str = ord(charinput)
+# # charlst = []
+# # for charinput in str:
+# #     charlst.append(charinput)
 
 
-print(charlst)
+# # print(charlst)
 
-# print((charinput).isdigit)
-# print((charlst).isdigit)
+# # # print((charinput).isdigit)
+# # # print((charlst).isdigit)
 
-luran = range(0, len(charlst))
+# # luran = range(0, len(charlst))
 
-x = 0
-for x in luran:
-    idx = charlst[x]
-    couidx = charlst.count(idx)
-    if idx > 1:
+# # x = 0
+# # for x in luran:
+# #     idx = charlst[x]
+# #     couidx = charlst.count(idx)
+# #     if idx > 1:
         
-    if couidx == 1:
-        print(f"{charlst[x]} was only found once in this string")
-    else:
-        print(f"{charlst[x]} was found {charlst.count(idx)} times in this string")
+# #     if couidx == 1:
+# #         print(f"{charlst[x]} was only found once in this string")
+# #     else:
+# #         print(f"{charlst[x]} was found {charlst.count(idx)} times in this string")
 
-# declist = int(charlst)
+# # # declist = int(charlst)
 
-alphalist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-alphalist2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+# # alphalist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# # alphalist2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-# print(ord(charlst))
+# # # print(ord(charlst))
+
+# convar = 0
+# charinput = input(("Type a string: "))
+
+
+# print(charinput)
+
+# # print(charinput)
+charinput = (input(("Type a string: ")))
+charinput = charinput.replace(' ','')
+print(charinput)
 
