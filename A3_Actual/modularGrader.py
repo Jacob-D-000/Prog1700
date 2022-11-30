@@ -6,10 +6,10 @@ filename: modularGrader.py
 Purpose: Practice modularization of fuctions by writing a program to calculate grades
 """
 
-def instructions():
+def displayInstructions():
     print("This Fuction can calculate an average grade out of 100%. This average could be for an an entire class or for a single indivdual.\nThis program will not accpet letter grades or equations. \n\nIf you want to finsih entering grades, type and enter exit. \nIf you need to see the rules of this fuction again, type -?.")
 
-def classorperson():
+def classOrPerson():
     convar = 0
     cvp = input("First lets determine Whether or not you are calculating the average grade of an entire class or single person. \n\nIf the average is for entire class, enter 1. \n\nIf the average is for one person, enter 2.\n\nPlease Enter Here: ")
     while convar == 0:
@@ -38,7 +38,7 @@ def validateGrade(x):
        var = False 
     return var
 
-def rancheck(x):
+def ranCheck(x):
     if 0 < x < 100:
         var = True
     else:
@@ -54,11 +54,9 @@ def getGrades():
         ggbool = (validateGrade(grd))
         if ggbool:
             grd = float(grd)
-            neobool = rancheck(grd)
+            neobool = ranCheck(grd)
             if neobool:
                 grdlst.append(grd)
-        
-
     return grdlst
 
 def calculateAvg(x):
@@ -66,7 +64,7 @@ def calculateAvg(x):
     grdavg = grdsum / len(x)
     return grdavg
     
-def resultype(x):
+def resulType(x):
     if x == 1:
         print("The average for the enter class is: ")
     else:
@@ -75,7 +73,7 @@ def resultype(x):
 def displayResults(x):
     print(x)
 
-def convarloop():
+def convarLoop():
     yorn = input("Thanks for using. \n\nIf you would like to find another average, type yes. \n\nIf you would like to exit the program, type no \n\nEnter command here: ")
     if yorn == "yes":
         convar = 1
@@ -87,14 +85,14 @@ def convarloop():
 
 def main():
     convar = 1
-    instructions()
+    displayInstructions()
     while convar == 1:
         print("\n\n")
-        cvp = classorperson()
+        cvp = classOrPerson()
         grdlst = getGrades()
         grdavg = calculateAvg(grdlst)
-        resultype(cvp)
+        resulType(cvp)
         displayResults(grdavg)
-        convar = convarloop()
+        convar = convarLoop()
     print("Thanks for using the Program!")
 main()
