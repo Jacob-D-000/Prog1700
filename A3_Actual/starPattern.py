@@ -23,22 +23,40 @@ def pattern_sqr(x):
     sqrlst = []
     rowcon = (x)
     colcon = (x)
+    valcol = str("*")
     for row in range(rowcon):
         sqrlst.append([])
         for col in range(colcon):
-            # valapp = string.punctuation("*")
-            sqrlst[row].append[valapp]
+            sqrlst[row].append(valcol)
     return sqrlst
+
+def pattern_tri(x):
+    trilst = []
+    rowcon = (x)
+    valcol = str("*")
+    conranvar = 0 
+    for row in range(rowcon):
+        trilst.append([])
+        conranvar += 1
+        for col in range(conranvar):
+            (trilst[row].append(valcol))
+    return trilst
     
 
-
-# def pattern_tri(x):
-
+def print_function(x):
+    for row in x:
+        for prtValue in row:
+            print(prtValue, end = " ")
+        print()
 
 def main():
     star = get_input()
     sqr =  pattern_sqr(star)
-    print(sqr)
-
+    print("This is a Square pattern!")
+    print_function(sqr)
+    tri = pattern_tri(star)
+    print("This is a Triangle pattern!")
+    print_function(tri)
+    print("All Done")
 
 main()
