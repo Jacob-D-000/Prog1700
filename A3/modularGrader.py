@@ -3,38 +3,43 @@ Program: Modularized Grader Program
 Author: Jacob Dimoff
 Date: 29/11/22
 filename: modularGrader.py
-Purpose: Practice modularization of fuctions by writing a program to calculate grades
+Purpose: Practice modularization of functions by writing a program to calculate grades
 """
 
+import string
+
 def displayInstructions():
-    print("This Fuction can calculate an average grade out of 100%. This average could be for an an entire class or for a single indivdual.\nThis program will not accpet letter grades or equations. \n\nIf you want to finsih entering grades, type and enter exit. \nIf you need to see the rules of this fuction again, type -?.")
+    print("This Function can calculate an average grade out of 100%. This average could be for an an entire class or for a single individual.\nThis program will not accept letter grades or equations. \nIf you want to finish entering grades, type and enter exit. \nIf you need to see the rules of this function again, type -?.")
 
 def classOrPerson():
     convar = 0
     cvp = input("First lets determine Whether or not you are calculating the average grade of an entire class or single person. \n\nIf the average is for entire class, enter 1. \n\nIf the average is for one person, enter 2.\n\nPlease Enter Here: ")
     while convar == 0:
         if cvp != "1" and cvp != "2": 
-            cvp = input("Can't compute! Please enter 1 to calculate the class average, or 2 to calculate the indivdual average. \n\nPlease Enter Here: ")
+            cvp = input("Can't compute! Please enter 1 to calculate the class average, or 2 to calculate the individual average. \n\nPlease Enter Here: ")
         else:
             convar += 1 
     return cvp
 
 def validateGrade(x):
     if x == "-?":
-        print("This program will not accpet letter grades or equations. If you want to finsih entering grades, type and enter exit. If you \nneed to see the rules of this fuction again, type -?.")
+        print("This program will not accept letter grades or equations. If you want to finish entering grades, type and enter exit. If you \nneed to see the rules of this function again, type -?.")
         var = False
     elif x == "exit":
         print("Thanks for the input")
         var = False
     elif x.isalpha():
-        print("Won't compute. Please input a grade. If you need help remebering the fuction's restrictions please enter -?.")
+        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions please enter -?.")
     elif x.isalpha() and x.isnumeric():
-        print("Won't compute. Please input a grade. If you need help remebering the fuction's restrictions please enter -?.")
+        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
         var = False
-    elif "." in x or x.isnumeric():
+    elif (x.isalpha() and x.isnumeric()) or string.punctuation in x:
+        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
+        var = False
+    elif "." in x and x.isnumeric():
         var = True
     else:
-       print("Won't compute. Please input a grade. If you need help remebering the fuction's restrictions please enter -?.")
+       print("Won't compute. Please input a grade. If you need help remembering the function's restrictions please enter -?.")
        var = False 
     return var
 
@@ -68,7 +73,7 @@ def resulType(x):
     if x == 1:
         print("The average for the enter class is: ")
     else:
-         print("The average for this indvidual is: ")
+         print("The average for this individual is: ")
 
 def displayResults(x):
     print(x)
@@ -95,4 +100,5 @@ def main():
         displayResults(grdavg)
         convar = convarLoop()
     print("Thanks for using the Program!")
+    
 main()
