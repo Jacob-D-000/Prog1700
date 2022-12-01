@@ -22,21 +22,27 @@ def classOrPerson():
     return cvp
 
 def validateGrade(x):
-    puctval = string.punctuation
     if x == "-?":
         print("This program will not accept letter grades or equations. If you want to finish entering grades, type and enter exit. If you \nneed to see the rules of this function again, type -?.")
         var = False
     elif x == "exit":
         print("Thanks for the input")
         var = False
-    elif x.isalpha():
-        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions please enter -?.")
-    elif x.isalpha() and x.isnumeric():
-        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
-        var = False
-    elif (x.isalpha() and x.isnumeric()) and puctval in x:
-        print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
-        var = False
+    # for i in alphaval:
+    #     if i in x:
+    #         var = False
+    #         return var
+    # elif x.isalpha():
+    #     print("Won't compute. Please input a grade. If you need help remembering the function's restrictions please enter -?.")
+    #     var = False
+    # elif x.isalpha() and puctval in x:
+    #     print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
+    # elif x.isalpha() and x.isnumeric():
+    #     print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
+        # var = False
+    # elif (x.isalpha() and x.isnumeric()) and puctval in x:
+    #     print("Won't compute. Please input a grade. If you need help remembering the function's restrictions  please enter -?.")
+    #     var = False
     elif "." in x or x.isnumeric():
         var = True
     else:
