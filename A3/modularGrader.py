@@ -23,7 +23,6 @@ def classOrPerson():
 
 def validateGrade(x):
     puctval = string.punctuation
-    print(puctval)
     if x == "-?":
         print("This program will not accept letter grades or equations. If you want to finish entering grades, type and enter exit. If you \nneed to see the rules of this function again, type -?.")
         var = False
