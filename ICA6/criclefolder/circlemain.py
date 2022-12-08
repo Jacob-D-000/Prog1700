@@ -3,7 +3,7 @@ Program: Circle Mai
 Author: Jacob Dimoff
 Date: 1/30/22
 filename: cirmain.py
-Purpose: Main fuction for circle module.
+Purpose: Main function for circle module.
 """
 from circle import Circle
 
