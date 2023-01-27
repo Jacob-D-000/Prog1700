@@ -1,0 +1,54 @@
+Actors	 An actor is a model element that interacts with a system. As a model element, it can be a abstract type of person (e.g. customers or people who all have the same position or role within the organization) or another external system. An actor in UML "specifies a role played by a user or any other system that interacts with the subject."
+Application server	 In a three-tier client/server architecture, a computer that performs the business functions and serves as an interface between clients and the database server. 
+Application software	 The program that directly support an information system in processing data to produce the required information. 
+Auto-incrementing value	 A tool within a database that lets the database assign unique values to use internally; also referred to as an auto number field.
+Business rule	 A statement that defines or constrains some aspect of a business. 
+Cardinality	 The cardinality of a join between two tables is the numerical relationship between rows of one table and rows in the other. Common cardinalities include one-to-one, one-to-many, and many-to-many.
+Cartesian product	 The table obtained by concatenating every row in the first table with every row in the second table. 
+Cascade delete	 A delete option in which related records are automatically deleted. 
+Class	 The general structure and actions of an object in an object-orientated system. 
+Class diagram	 A UML diagram that for each class, shows the name, attributes, and methods of the class, as well as the relationships between the classes in a database. 
+Client	 A computer that is connected to a network and that people use to access data stored on a server in a client/server system; also called a front-end machine or front-end processor. 
+Client/server (system)	 A networked system in which a special site on the network, called the server, provides services to the other sites, called the clients. Clients send requests for the specific services they need. Software, often including a DBMS, running on the server then processes the requests and sends only appropriate data and other results back to the clients.
+CRUD tasks (Create, Read, Update, Delete)	 A set of tasks that includes creating new data items, reading and finding existing items, updating data items with new information, and deleting outdated data items.
+Data mining	 The uncovering of new knowledge, patterns, trends, and rules from the data stored in a data warehouse. 
+Data warehouse	 A subject-orientated, time-variant, nonvolatile collection of data used in support of management's decision-making process. 
+Database	 A collection of individual data items that are stored in a highly structured way that represents a model of reality.
+Database design	 The process of determining the content and structure of data in a database in order to support some activity on behalf of a user or group of users. 
+Database Management Systems (DBMS)	 A program, or a collection of programs, through which users interact with a database.Includes a database, engine, and end user interface. DBMSs let you create forms and reports quickly and easily, as well as obtain answers to questions about the data stored in a database. 
+Database server	 In a three-tier client/server architecture and in other architectures, a computer that performs the database functions such as storing and retrieving data in a database. 
+Entity	 A person, place, object, event, or idea for which you want to store and process data. 
+Entity-relationship (E-R) diagram	 A graphic model for database design in which entries are represented as rectangles and relationships are represented as either arrows or diamonds connected to the entities they relate. 
+Entity-relationship (E-R) model	 An approach to representing data in a database that uses E-R diagrams exclusively as the tool for representing entities, attributes, and relationships. 
+First normal form (1NF)	 A table is in first normal form if it does not contain a repeating group. 
+Form	 A screen object you use to maintain, view, and print data from a database. 
+Fourth normal form (4NF)	 A table is in fourth normal form if it is in third normal form and there are no multi-valued dependencies. 
+Information system	 The collection of data, people, procedures, stored data, software, hardware, and information required to support a specific set of related functions. 
+Information-level design	 The step during database design in which the goal is to create a clean, DBMS-independent design that will support all user requirements. 
+Many-to-many relationship	 A relationship between two entities in which each occurrence of each entity can be related to many occurrences of the other entity. 
+Microsoft SharePoint Server	 A tool used to store, organize, and share information. 
+Normalization	 The process of adding additional tables and fields that will be required by the DBMS to do its job efficiently; a series of rules that your database's table structure must pass in order to be considered a good relational design. . The goal of normalization is for your tables to meets a standard called third normal form (3NF). 
+One-to-many relationship	 A relationship between two entities in which each occurrence of the first entity is related to many occurrences of the second entity, and each occurrence of the second entity is related to at most one occurrence of the first entity. 
+One-to-one relationship	 A relationship between two entities in which each occurrence of the first entity is related to one occurrence of the second entity, and each occurrence of the second entity is related to at most one occurrence of the first entity. 
+Online analytical processing (OLAP)	 Software that is optimized to work efficiently with multidimensional databases in a data warehouse environment. 
+Online transaction processing (OLTP)	 A system that processes a transaction by dealing with a small number of rows in a relational database in a highly structred, repetitive, and predetermined way. 
+Physical-level design	 The step during database design in which a design for a given DBMS is produced from the final information-level design. 
+Production system	 The hardware, software, and database for users. Also called a live system. 
+Relational databases	 A system in which multiple data tables that refer to one another in order to store a large amount of data about a single entity.
+Scalability	 The ability of a computer system to continue to function well as utilization of the system increases. 
+Scope creep	 A process in which new features and enhancements continually get added to a project, thus leading to a database project that never seems to get finished.
+Second nromal form (2NF)	 A relation is in second normal form if it is in first normal form and no nonkey attribute is dependent on only a portion of the primary key. 
+Server	 A computer that provides services to the clients in a client/server system; also called a back-end processor or back-end machine. 
+Test system	 The hardware, software, and database that programmers use to develop new programs and modify existing programs. Also called a sandbox. 
+Third normal form (3NF)	 A table is in third normal form if it is in second normal form and the only determinants it contains are candidate keys. 
+Three-tier architecture	 A client/server architecture in which the clients perform presentation functions, a database performs the database functions, and the application servers perform the business functions and serve as an interface between clients and the database server. Also called n-tier architecture. 
+Unified Modeling Language (UML)	 An approach used to model all aspects of software development for object-orientated systems. 
+Weak entity	 An entity that depends on another entity for its own existence. 
+XML (Extensible Markup Language)	 A metalanguage derived from a restricted subset of SGML and design for the exchange of data on the Web. You can customize XML tags to describe the data an XML document contains and how that data should be structured. 
+XML declaration	 An XML statement clause that specifies to an XML processor which version of XML to use. 
+XML schema	 A set of statements that specifies the elements (tags), the attributes (characteristics associated with each tag), and the element relationships for an XML document. The XML schema can be a separate file with a .xsd extension, or you can include it at the beginning of an XML document. It's a newer form of DTD that more closely matches database features and terminology. 
+XQuery	 A language for querying XML, XSL, XHTML, other XML-based documents, and similarly structured data repositories. 
+XSL (Extensible Stylesheet Language)	 A standard W3C language for creating stylesheets for XML documents. 
+XSLT (XSL Transformations)	 A language that defines the rules to process an XML document and change it into another doucment; this other document could be another XML document, an XSL document, an HTML or XHTML document, or most any other type of document.
+Attribute	A characteristic of an entity; data that identifies or describes an entity. Usually represented as a column in a table, attributes store data values.
+Jacob	A Cool Dude

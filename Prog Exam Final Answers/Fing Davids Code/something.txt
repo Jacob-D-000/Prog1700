@@ -1,0 +1,8 @@
+def print_name(name):
+    lstname = name.split()
+    star = "**"
+    for i in len(lstname)
+       let = lstname(1)
+       strlet = (star + let + star)
+        
+print_name('YourName')
